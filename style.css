@@ -299,7 +299,8 @@ section { position: relative; padding: var(--section-pad) 0; }
 }
 .portrait-window {
   position: relative;
-  aspect-ratio: 4 / 5;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
   overflow: hidden;
   background:
     repeating-linear-gradient(135deg, rgba(163,184,163,0.05) 0 2px, transparent 2px 14px),
