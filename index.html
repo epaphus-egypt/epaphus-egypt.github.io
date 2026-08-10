@@ -3,221 +3,303 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>[NAME] — Mathematics × Computing × Engineering</title>
-<meta name="description" content="Personal research notebook of [NAME]: mathematical models, algorithms, simulation, and physical systems.">
+<title>[NAME] — Field Notes</title>
+<meta name="description" content="Personal research notebook of [NAME] — mathematics, computing, and mechanical engineering.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Spectral:wght@400;500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<!-- ============================================================
-     NAV
-     ============================================================ -->
-<header class="site-nav">
-  <div class="nav-inner">
-    <a href="index.html" class="nav-mark"><span class="dot"></span> [NAME]</a>
-    <nav>
-      <ul class="nav-links" id="navLinks">
-        <li><a href="#projects" class="nav-link">Projects</a></li>
-        <li><a href="#notebook" class="nav-link">Notebook</a></li>
-        <li><a href="#skills" class="nav-link">Skills</a></li>
-        <li><a href="#beyond" class="nav-link">Beyond</a></li>
-        <li><a href="#contact" class="nav-link">Contact</a></li>
-      </ul>
-    </nav>
-    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+<canvas id="bg-canvas" aria-hidden="true"></canvas>
+
+<!-- ============================ NAV ============================ -->
+<nav class="site-nav" id="site-nav">
+  <div class="wrap">
+    <a href="#top" class="nav-mark">FIELD<span class="dot">.</span>NOTES</a>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#notebook">Notebook</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#beyond">Beyond</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<main id="top">
+
+<!-- ============================ 1. HERO / ABOUT ============================ -->
+<header class="hero" id="about">
+  <div class="wrap">
+    <div class="hero-copy reveal">
+      <span class="eyebrow">Vol. 01 — Personal Record</span>
+      <h1 class="hero-name">[NAME]</h1>
+      <p class="hero-role">Mathematics × Computing × Engineering</p>
+      <p class="hero-intro">
+        I explore mathematical models, algorithms, simulation, optimization, and physical
+        systems. A Mechanical Engineering student interested in understanding complex
+        systems through mathematics, computation, and engineering.
+      </p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary">View Projects</a>
+        <a href="#contact" class="btn">Get in Touch</a>
+      </div>
+      <div class="hero-coords">
+        <span>LAT 23.81°N</span>
+        <span>LOG ENTRY 001</span>
+        <span>REV 2026.08</span>
+      </div>
+    </div>
+
+    <div class="hero-figure reveal">
+      <div class="portrait-frame">
+        <span class="portrait-tag">FIG. 01</span>
+        <div class="portrait-window">
+          <img src="assets/profile-placeholder.jpg" alt="Portrait of [NAME]" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+          <div class="portrait-placeholder" style="display:none;">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><rect x="3" y="3" width="18" height="18" rx="1"/><circle cx="9" cy="10" r="2"/><path d="M21 16l-5-5-4 4-3-3-6 6"/></svg>
+            <span>Replace with<br>assets/profile-placeholder.jpg</span>
+          </div>
+        </div>
+        <div class="portrait-caption">
+          <span>PORTRAIT — ARCHIVE</span>
+          <span>4×5</span>
+        </div>
+      </div>
+    </div>
   </div>
 </header>
 
-<!-- ============================================================
-     HERO
-     ============================================================ -->
-<section class="hero" id="top">
-  <div class="hero-canvas-wrap"><canvas id="heroCanvas"></canvas></div>
-  <div class="wrap hero-inner">
-    <div class="hero-index">FIELD NOTES — VOL. 01 / [YEAR]</div>
-    <h1>[NAME]<br><em>Mathematics, computing,<br>& mechanical systems.</em></h1>
-    <div class="hero-role">Applied Mathematics <span class="sep"></span> Mechanical Engineering</div>
-    <p class="hero-desc">
-      I am currently a Mechanical Engineering undergrad student. I explore mathematical models, algorithms, simulation, and optimization —
-      and the physical systems they describe. May be my all academic curiousity sum up to finding mathematical patterns in random chaotic physical world. 
-    </p>
-   <div class="hero-actions">
-      <a href="#projects" class="btn btn-primary">View projects →</a>
-      <a href="#notebook" class="btn btn-ghost">Open notebook</a>
+<hr class="section-divider">
+
+<!-- ============================ 2. EDUCATION & EXPERIENCE ============================ -->
+<section id="education">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div>
+        <span class="eyebrow">Chronological Record</span>
+        <h2>Education &amp; Experience</h2>
+      </div>
+      <span class="section-num">§ 02</span>
     </div>
-    <div class="hero-coords">
-      <span>LAT <b>—.——</b></span>
-      <span>ITERATION <b>N</b></span>
-      <span>STATUS <b>compiling</b></span>
-      <span>LAST COMMIT <b>—</b></span>
+
+    <div class="timeline-cols">
+      <div class="timeline-col reveal">
+        <h3>Education</h3>
+        <div class="timeline">
+          <div class="t-entry" data-index="01">
+            <span class="t-date">[Year] — Present</span>
+            <h4 class="t-title">Mechanical Engineering</h4>
+            <p class="t-org">[University Name]</p>
+            <p class="t-desc">Coursework spanning dynamics, thermodynamics, and applied mathematics, with a growing focus on computational methods.</p>
+          </div>
+          <div class="t-entry" data-index="02">
+            <span class="t-date">[Year] — [Year]</span>
+            <h4 class="t-title">Higher Secondary Education</h4>
+            <p class="t-org">[Institution Name]</p>
+            <p class="t-desc">Concentration in mathematics and physics, first exposure to programming and numerical problem-solving.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline-col reveal">
+        <h3>Experience</h3>
+        <div class="timeline">
+          <div class="t-entry" data-index="01">
+            <span class="t-date">[Date]</span>
+            <h4 class="t-title">Project / Research Experience 01</h4>
+            <p class="t-org">[Organization or Personal Project]</p>
+            <p class="t-desc">Short placeholder description of the work, tools used, and outcome.</p>
+          </div>
+          <div class="t-entry" data-index="02">
+            <span class="t-date">[Date]</span>
+            <h4 class="t-title">Project / Research Experience 02</h4>
+            <p class="t-org">[Organization or Personal Project]</p>
+            <p class="t-desc">Short placeholder description of the work, tools used, and outcome.</p>
+          </div>
+          <div class="t-entry" data-index="03">
+            <span class="t-date">[Date]</span>
+            <h4 class="t-title">Experience 03</h4>
+            <p class="t-org">[Organization]</p>
+            <p class="t-desc">Short placeholder description of the work, tools used, and outcome.</p>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- ============================================================
-     PROJECTS
-     ============================================================ -->
+<hr class="section-divider">
+
+<!-- ============================ 3. FEATURED PROJECTS ============================ -->
 <section id="projects">
   <div class="wrap">
-    <div class="section-head">
+    <div class="section-head reveal">
       <div>
-        <div class="eyebrow">Featured work</div>
-        <h2>Projects</h2>
+        <span class="eyebrow">Selected Work</span>
+        <h2>Featured Projects</h2>
       </div>
-      <p>Selected work spanning numerical methods, simulation, optimization, and applied machine learning.</p>
+      <span class="section-num">§ 03</span>
     </div>
 
     <div class="project-grid">
 
-      <article class="card scroll-fade">
-        <span class="card-num">01</span>
-        <div class="card-viz">
-          <svg viewBox="0 0 200 100" preserveAspectRatio="none">
-            <polyline points="0,80 20,60 40,65 60,30 80,40 100,15 120,35 140,20 160,45 180,10 200,30"
-              fill="none" stroke="var(--moss-bright)" stroke-width="1.5"/>
-          </svg>
+      <article class="project-card reveal">
+        <div class="project-top">
+          <span class="project-index">PRJ. 01</span>
+          <span class="project-mark">▲</span>
         </div>
-        <h3>[Project title]</h3>
-        <p>[Project description]</p>
-        <div class="tags"><span class="tag">[Tag]</span><span class="tag">[Tag]</span></div>
-        <a href="projects/project.html" class="card-link">Read the writeup <span class="arrow">→</span></a>
+        <h3>Project Title 01</h3>
+        <p>Short placeholder description of what this project explores and how it was built.</p>
+        <div class="project-tags"><span>Mathematics</span><span>Simulation</span><span>Python</span></div>
+        <a class="project-link" href="projects/project-01.html">View Project
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
       </article>
 
-      <article class="card scroll-fade">
-        <span class="card-num">02</span>
-        <div class="card-viz">
-          <svg viewBox="0 0 200 100">
-            <circle cx="100" cy="50" r="8" fill="none" stroke="var(--copper-bright)" stroke-width="1.2"/>
-            <circle cx="100" cy="50" r="20" fill="none" stroke="var(--copper)" stroke-width="1" opacity="0.7"/>
-            <circle cx="100" cy="50" r="34" fill="none" stroke="var(--copper)" stroke-width="1" opacity="0.4"/>
-          </svg>
+      <article class="project-card reveal">
+        <div class="project-top">
+          <span class="project-index">PRJ. 02</span>
+          <span class="project-mark">▲</span>
         </div>
-        <h3>[Project title]</h3>
-        <p>[Project description]</p>
-        <div class="tags"><span class="tag">[Tag]</span><span class="tag">[Tag]</span></div>
-        <a href="projects/project.html" class="card-link">Read the writeup <span class="arrow">→</span></a>
+        <h3>Project Title 02</h3>
+        <p>Short placeholder description of what this project explores and how it was built.</p>
+        <div class="project-tags"><span>Optimization</span><span>Algorithms</span></div>
+        <a class="project-link" href="projects/project-02.html">View Project
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
       </article>
 
-      <article class="card scroll-fade">
-        <span class="card-num">03</span>
-        <div class="card-viz">
-          <svg viewBox="0 0 200 100">
-            <path d="M10,80 Q60,10 100,50 T190,20" fill="none" stroke="var(--sage)" stroke-width="1.5"/>
-            <circle cx="100" cy="50" r="2.5" fill="var(--copper-bright)"/>
-          </svg>
+      <article class="project-card reveal">
+        <div class="project-top">
+          <span class="project-index">PRJ. 03</span>
+          <span class="project-mark">▲</span>
         </div>
-        <h3>[Project title]</h3>
-        <p>[Project description]</p>
-        <div class="tags"><span class="tag">[Tag]</span><span class="tag">[Tag]</span></div>
-        <a href="projects/project.html" class="card-link">Read the writeup <span class="arrow">→</span></a>
+        <h3>Project Title 03</h3>
+        <p>Short placeholder description of what this project explores and how it was built.</p>
+        <div class="project-tags"><span>Mechanical Engineering</span><span>CFD</span></div>
+        <a class="project-link" href="projects/project-03.html">View Project
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
       </article>
 
-      <article class="card scroll-fade">
-        <span class="card-num">04</span>
-        <div class="card-viz">
-          <svg viewBox="0 0 200 100">
-            <g stroke="var(--moss-bright)" stroke-width="1" opacity="0.85">
-              <line x1="20" y1="20" x2="90" y2="60"/><line x1="90" y1="60" x2="160" y2="30"/>
-              <line x1="90" y1="60" x2="70" y2="90"/><line x1="20" y1="20" x2="70" y2="90"/>
-            </g>
-            <circle cx="20" cy="20" r="3" fill="var(--sage)"/><circle cx="90" cy="60" r="3" fill="var(--sage)"/>
-            <circle cx="160" cy="30" r="3" fill="var(--sage)"/><circle cx="70" cy="90" r="3" fill="var(--sage)"/>
-          </svg>
+      <article class="project-card reveal">
+        <div class="project-top">
+          <span class="project-index">PRJ. 04</span>
+          <span class="project-mark">▲</span>
         </div>
-        <h3>[Project title]</h3>
-        <p>[Project description]</p>
-        <div class="tags"><span class="tag">[Tag]</span><span class="tag">[Tag]</span></div>
-        <a href="projects/project.html" class="card-link">Read the writeup <span class="arrow">→</span></a>
-      </article>
-
-      <article class="card scroll-fade">
-        <span class="card-num">05</span>
-        <div class="card-viz">
-          <svg viewBox="0 0 200 100">
-            <rect x="20" y="60" width="14" height="30" fill="var(--copper)"/>
-            <rect x="50" y="40" width="14" height="50" fill="var(--copper)"/>
-            <rect x="80" y="20" width="14" height="70" fill="var(--copper-bright)"/>
-            <rect x="110" y="50" width="14" height="40" fill="var(--copper)"/>
-            <rect x="140" y="35" width="14" height="55" fill="var(--copper)"/>
-          </svg>
-        </div>
-        <h3>[Project title]</h3>
-        <p>[Project description]</p>
-        <div class="tags"><span class="tag">[Tag]</span><span class="tag">[Tag]</span></div>
-        <a href="projects/project.html" class="card-link">Read the writeup <span class="arrow">→</span></a>
-      </article>
-
-      <article class="card scroll-fade">
-        <span class="card-num">06</span>
-        <div class="card-viz">
-          <svg viewBox="0 0 200 100">
-            <path d="M0,50 C40,10 60,90 100,50 S160,10 200,50" fill="none" stroke="var(--moss-bright)" stroke-width="1.5"/>
-          </svg>
-        </div>
-        <h3>[Project title]</h3>
-        <p>[Project description]</p>
-        <div class="tags"><span class="tag">[Tag]</span><span class="tag">[Tag]</span></div>
-        <a href="projects/project.html" class="card-link">Read the writeup <span class="arrow">→</span></a>
+        <h3>Project Title 04</h3>
+        <p>Short placeholder description of what this project explores and how it was built.</p>
+        <div class="project-tags"><span>Machine Learning</span><span>Engineering</span></div>
+        <a class="project-link" href="projects/project-04.html">View Project
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
       </article>
 
     </div>
   </div>
 </section>
 
-<!-- ============================================================
-     RESEARCH NOTEBOOK
-     ============================================================ -->
+<hr class="section-divider">
+
+<!-- ============================ 4. RESEARCH NOTEBOOK ============================ -->
 <section id="notebook">
   <div class="wrap">
-    <div class="section-head">
+    <div class="section-head reveal">
       <div>
-        <div class="eyebrow">Explorations</div>
+        <span class="eyebrow">Ongoing &amp; Unfinished</span>
         <h2>Research Notebook</h2>
       </div>
-      <p>Smaller experiments, derivations, and half-finished ideas — kept here on purpose.</p>
+      <span class="section-num">§ 04</span>
     </div>
 
-    <div class="notebook">
-      <div class="entry scroll-fade">
-        <div class="entry-meta"><span>[YYYY.MM.DD]</span><span class="status active">active</span><span>[Topic]</span></div>
-        <h3>[Entry title]</h3>
-        <p>[Short description of what you're exploring.]</p>
-        <div class="annot">note — [optional annotation]</div>
-      </div>
+    <p class="notebook-intro reveal">
+      A running log of smaller experiments, technical notes, derivations, simulations, and
+      unfinished ideas — concepts currently being explored, not polished projects.
+    </p>
 
-      <div class="entry scroll-fade">
-        <div class="entry-meta"><span>[YYYY.MM.DD]</span><span class="status paused">paused</span><span>[Topic]</span></div>
-        <h3>[Entry title]</h3>
-        <p>[Short description of what you're exploring.]</p>
-        <div class="annot">note — [optional annotation]</div>
+    <div class="notes-list reveal">
+      <div class="note-row">
+        <span class="note-id">NOTE 001</span>
+        <div class="note-body">
+          <h3>[Topic Placeholder]</h3>
+          <p>Short placeholder description of what's being investigated and why.</p>
+        </div>
+        <span class="note-topic">Numerical Methods</span>
+        <span class="note-status exploring">Exploring</span>
       </div>
-
-      <div class="entry scroll-fade">
-        <div class="entry-meta"><span>[YYYY.MM.DD]</span><span class="status done">closed</span><span>[Topic]</span></div>
-        <h3>[Entry title]</h3>
-        <p>[Short description of what you're exploring.]</p>
-        <div class="annot">note — [optional annotation]</div>
+      <div class="note-row">
+        <span class="note-id">NOTE 002</span>
+        <div class="note-body">
+          <h3>[Topic Placeholder]</h3>
+          <p>Short placeholder description of what's being investigated and why.</p>
+        </div>
+        <span class="note-topic">Probability</span>
+        <span class="note-status experiment">Experiment</span>
+      </div>
+      <div class="note-row">
+        <span class="note-id">NOTE 003</span>
+        <div class="note-body">
+          <h3>[Topic Placeholder]</h3>
+          <p>Short placeholder description of what's being investigated and why.</p>
+        </div>
+        <span class="note-topic">Optimization</span>
+        <span class="note-status progress">In Progress</span>
+      </div>
+      <div class="note-row">
+        <span class="note-id">NOTE 004</span>
+        <div class="note-body">
+          <h3>[Topic Placeholder]</h3>
+          <p>Short placeholder description of what's being investigated and why.</p>
+        </div>
+        <span class="note-topic">Statistical Mechanics</span>
+        <span class="note-status exploring">Exploring</span>
+      </div>
+      <div class="note-row">
+        <span class="note-id">NOTE 005</span>
+        <div class="note-body">
+          <h3>[Topic Placeholder]</h3>
+          <p>Short placeholder description of what's being investigated and why.</p>
+        </div>
+        <span class="note-topic">CFD</span>
+        <span class="note-status experiment">Experiment</span>
+      </div>
+      <div class="note-row">
+        <span class="note-id">NOTE 006</span>
+        <div class="note-body">
+          <h3>[Topic Placeholder]</h3>
+          <p>Short placeholder description of what's being investigated and why.</p>
+        </div>
+        <span class="note-topic">Control Systems</span>
+        <span class="note-status progress">In Progress</span>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ============================================================
-     SKILLS
-     ============================================================ -->
+<hr class="section-divider">
+
+<!-- ============================ 5. SKILLS ============================ -->
 <section id="skills">
   <div class="wrap">
-    <div class="section-head">
+    <div class="section-head reveal">
       <div>
-        <div class="eyebrow">Working knowledge</div>
-        <h2>Skills</h2>
+        <span class="eyebrow">Working Toolkit</span>
+        <h2>Tools &amp; Knowledge</h2>
       </div>
-      <p>Grouped by discipline, not by buzzword. Depth varies — this list is a map, not a scorecard.</p>
+      <span class="section-num">§ 05</span>
     </div>
 
     <div class="skills-grid">
-      <div class="skill-col">
-        <div class="eyebrow">Mathematics</div>
+      <div class="skill-card reveal">
+        <span class="eyebrow">Mathematics</span>
         <ul>
           <li>Calculus</li>
           <li>Linear Algebra</li>
@@ -227,19 +309,20 @@
           <li>Numerical Methods</li>
         </ul>
       </div>
-      <div class="skill-col">
-        <div class="eyebrow">Computing</div>
+      <div class="skill-card reveal">
+        <span class="eyebrow">Computing</span>
         <ul>
           <li>Python</li>
           <li>C / C++</li>
           <li>Git</li>
-          <li>NumPy / SciPy</li>
+          <li>NumPy</li>
+          <li>SciPy</li>
           <li>Data Analysis</li>
           <li>Machine Learning</li>
         </ul>
       </div>
-      <div class="skill-col">
-        <div class="eyebrow">Engineering</div>
+      <div class="skill-card reveal">
+        <span class="eyebrow">Engineering</span>
         <ul>
           <li>Simulation</li>
           <li>Heat Transfer</li>
@@ -253,57 +336,137 @@
   </div>
 </section>
 
-<!-- ============================================================
-     BEYOND ENGINEERING
-     ============================================================ -->
+<hr class="section-divider">
+
+<!-- ============================ 6. BEYOND ENGINEERING ============================ -->
 <section id="beyond">
   <div class="wrap">
-    <div class="section-head">
+    <div class="section-head reveal">
       <div>
-        <div class="eyebrow">Off the page</div>
+        <span class="eyebrow">Outside the Lab</span>
         <h2>Beyond Engineering</h2>
+      </div>
+      <span class="section-num">§ 06</span>
+    </div>
+
+    <p class="beyond-intro reveal">
+      The rest of this notebook shows what I can do. This section is about who I am and
+      what I find interesting outside of coursework and projects.
+    </p>
+
     <div class="beyond-grid">
-      <a href="beyond/film.html" class="beyond-card scroll-fade">
-        <span class="b-mark">01 / FILM</span>
-        <h3>Film</h3>
-        <span class="b-arrow">↗</span>
+
+      <a class="beyond-card reveal" href="beyond/film.html">
+        <div class="beyond-visual">
+          <svg viewBox="0 0 300 340" preserveAspectRatio="xMidYMid slice">
+            <rect x="20" y="30" width="260" height="150" fill="none" stroke="var(--line-strong)" stroke-width="1"/>
+            <line x1="20" y1="60" x2="280" y2="60" stroke="var(--line)" stroke-width="1"/>
+            <line x1="60" y1="30" x2="60" y2="180" stroke="var(--line)" stroke-width="1"/>
+            <line x1="100" y1="30" x2="100" y2="180" stroke="var(--line)" stroke-width="1"/>
+            <line x1="140" y1="30" x2="140" y2="180" stroke="var(--line)" stroke-width="1"/>
+            <line x1="180" y1="30" x2="180" y2="180" stroke="var(--line)" stroke-width="1"/>
+            <line x1="220" y1="30" x2="220" y2="180" stroke="var(--line)" stroke-width="1"/>
+            <line x1="260" y1="30" x2="260" y2="180" stroke="var(--line)" stroke-width="1"/>
+          </svg>
+        </div>
+        <div class="beyond-top">
+          <span class="beyond-index">01</span>
+        </div>
+        <div class="beyond-bottom">
+          <h3>Film</h3>
+          <p>Cinema, storytelling, and visual composition.</p>
+          <span class="beyond-link">Read more
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </span>
+        </div>
       </a>
-      <a href="beyond/martial-arts.html" class="beyond-card scroll-fade">
-        <span class="b-mark">02 / TRAINING</span>
-        <h3>Martial Arts</h3>
-        <span class="b-arrow">↗</span>
+
+      <a class="beyond-card reveal" href="beyond/martial-arts.html">
+        <div class="beyond-visual">
+          <svg viewBox="0 0 300 340" preserveAspectRatio="xMidYMid slice">
+            <polyline points="30,260 70,180 110,210 150,120 190,150 230,60 270,90" fill="none" stroke="var(--line-strong)" stroke-width="1.5"/>
+            <circle cx="30" cy="260" r="3" fill="var(--moss-bright)"/>
+            <circle cx="110" cy="210" r="3" fill="var(--moss-bright)"/>
+            <circle cx="190" cy="150" r="3" fill="var(--moss-bright)"/>
+            <circle cx="270" cy="90" r="3" fill="var(--moss-bright)"/>
+          </svg>
+        </div>
+        <div class="beyond-top">
+          <span class="beyond-index">02</span>
+        </div>
+        <div class="beyond-bottom">
+          <h3>Martial Arts</h3>
+          <p>Training, movement, and steady progression.</p>
+          <span class="beyond-link">Read more
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </span>
+        </div>
       </a>
-      <a href="beyond/music.html" class="beyond-card scroll-fade">
-        <span class="b-mark">03 / SOUND</span>
-        <h3>Music</h3>
-        <span class="b-arrow">↗</span>
+
+      <a class="beyond-card reveal" href="beyond/gaming.html">
+        <div class="beyond-visual">
+          <svg viewBox="0 0 300 340" preserveAspectRatio="xMidYMid slice">
+            <circle cx="60" cy="70" r="4" fill="var(--copper)"/>
+            <circle cx="180" cy="50" r="4" fill="var(--moss-bright)"/>
+            <circle cx="240" cy="140" r="4" fill="var(--moss-bright)"/>
+            <circle cx="100" cy="160" r="4" fill="var(--copper)"/>
+            <circle cx="40" cy="220" r="4" fill="var(--moss-bright)"/>
+            <line x1="60" y1="70" x2="180" y2="50" stroke="var(--line-strong)" stroke-width="1"/>
+            <line x1="180" y1="50" x2="240" y2="140" stroke="var(--line-strong)" stroke-width="1"/>
+            <line x1="60" y1="70" x2="100" y2="160" stroke="var(--line-strong)" stroke-width="1"/>
+            <line x1="100" y1="160" x2="240" y2="140" stroke="var(--line-strong)" stroke-width="1"/>
+            <line x1="100" y1="160" x2="40" y2="220" stroke="var(--line-strong)" stroke-width="1"/>
+          </svg>
+        </div>
+        <div class="beyond-top">
+          <span class="beyond-index">03</span>
+        </div>
+        <div class="beyond-bottom">
+          <h3>Gaming</h3>
+          <p>Strategy, systems, and competitive decision-making.</p>
+          <span class="beyond-link">Read more
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </span>
+        </div>
       </a>
-      <a href="beyond/strategy.html" class="beyond-card scroll-fade">
-        <span class="b-mark">04 / SYSTEMS</span>
-        <h3>Strategy</h3>
-        <span class="b-arrow">↗</span>
-      </a>
+
     </div>
   </div>
 </section>
 
-<!-- ============================================================
-     FOOTER
-     ============================================================ -->
-<footer id="contact">
+</main>
+
+<!-- ============================ 7. FOOTER / CONTACT ============================ -->
+<footer class="site-footer" id="contact">
   <div class="wrap">
     <div class="footer-top">
-      <p class="footer-lede">[Closing line — replace with your own.]</p>
+      <div class="footer-brand">
+        <span class="eyebrow">§ 07 — Contact</span>
+        <h3>[NAME]</h3>
+        <p>Always glad to talk mathematics, algorithms, or physical systems — reach out.</p>
+      </div>
       <div class="footer-links">
-        <a href="https://github.com/" target="_blank" rel="noopener">GitHub ↗</a>
-        <a href="https://linkedin.com/" target="_blank" rel="noopener">LinkedIn ↗</a>
-        <a href="mailto:[email@example.com]">Email</a>
-        <a href="assets/cv.pdf" target="_blank" rel="noopener">CV ↓</a>
+        <div class="footer-col">
+          <span>Connect</span>
+          <a href="https://github.com/[username]" target="_blank" rel="noopener">GitHub ↗</a>
+          <a href="https://linkedin.com/in/[username]" target="_blank" rel="noopener">LinkedIn ↗</a>
+          <a href="mailto:[email@example.com]">Email</a>
+        </div>
+        <div class="footer-col">
+          <span>Documents</span>
+          <a href="assets/cv-placeholder.pdf" target="_blank" rel="noopener">Download CV ↗</a>
+        </div>
+        <div class="footer-col">
+          <span>Site</span>
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#notebook">Notebook</a>
+        </div>
       </div>
     </div>
     <div class="footer-bottom">
-      <span>© [YEAR] [NAME]. Built with HTML, CSS, and vanilla JS.</span>
-      <span>Last updated [MONTH YEAR]</span>
+      <span>© <span id="year"></span> [NAME]. Built by hand.</span>
+      <span>Field Notes — v1.0</span>
     </div>
   </div>
 </footer>
