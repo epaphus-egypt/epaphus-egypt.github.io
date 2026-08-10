@@ -286,16 +286,14 @@ section { position: relative; padding: var(--section-pad) 0; }
 }
 .portrait-frame {
   position: relative;
-  border: 1px solid var(--line-strong);
-  padding: 14px;
-  background: var(--surface);
+  border: none;
+  padding: 0;
+  background: none;
+  width: min(100%, 380px);
+  margin: 0 auto;
 }
 .portrait-frame::before {
-  content: "";
-  position: absolute;
-  inset: 5px;
-  border: 1px solid var(--line);
-  pointer-events: none;
+  content: none;
 }
 .portrait-window {
   position: relative;
@@ -328,25 +326,11 @@ section { position: relative; padding: var(--section-pad) 0; }
   text-transform: uppercase;
 }
 .portrait-placeholder svg { width: 34px; height: 34px; opacity: 0.5; }
+.portrait-tag,
 .portrait-caption {
-  display: flex;
-  justify-content: space-between;
-  font-family: var(--font-mono);
-  font-size: 0.68rem;
-  color: var(--ink-faint);
-  padding: 0.7rem 0.2rem 0.1rem;
-  letter-spacing: 0.04em;
+  display: none;
 }
-.portrait-tag {
-  position: absolute;
-  top: 26px; right: 26px;
-  font-family: var(--font-mono);
-  font-size: 0.65rem;
-  color: var(--copper);
-  border: 1px solid rgba(185, 129, 79, 0.4);
-  padding: 3px 8px;
-  background: rgba(13,19,15,0.7);
-}
+
 
 /* ==========================================================================
    TIMELINE — Education & Experience
